@@ -1,0 +1,61 @@
+
+// 책 보고 추가함 START
+
+// 프로젝트의 플러그인 의존성 관리를 위한 설정
+buildscript {
+    // ext : build.gradle 에서 사용하는 전역변수를 설정하겠다는 의미
+    ext {
+        // 전역변수를 생성하고 그 값을 초기화
+        springBootVersion = '2.1.7.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // 해당 플러그인에서 위에 선언한 전역변수를 의존성으로 받겠다는 의미
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+// 앞서 선언한 플러그인 의존성들을 적용할 것인지를 결정하는 코드
+// 자바와 스프링 부트를부사용하기 위한 필수 플러그인
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management' // 스프링 부트의 의존성을 관리해주는 플러그인이라 필수
+
+// 각종 의존성(라이브러리)들을 어떤 원격저장소에서 받을지를 정함
+// 기본적으로 mavenCentral() 많이 사용
+// 최근에는 라이브러리 업로드 난이도 때문에 jcenter()도 많이 사용 - deprecated 되어서 추가 안함
+repositories {
+    mavenCentral()
+}
+
+// 프로젝트 개발에 필요한 의존성들을 선언하는 곳
+dependencies {
+    // 초기 생성 코드
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    // 책 보고 추가함
+    // compile, test compile 은 deprecated 되어서 수정
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+}
+
+// 책 보고 추가함 END
+
+
+// 초기 생성 코드
+
+//plugins {
+//    id 'java'
+//}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+test {
+    useJUnitPlatform()
+}
