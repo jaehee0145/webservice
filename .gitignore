@@ -186,4 +186,5 @@ hs_err_pid*
 
 # Used by previous versions of JEnv
 .jenv-version
+.idea
 
