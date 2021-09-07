@@ -23,3 +23,10 @@
 - 컨트롤러 생성 HelloController.java
   - @RestController
     - 컨트롤러를 JSON을 반환하는 컨트롤러로 만들어 줌
+
+- 테스트 클래스 생성 HelloControllerTest.java
+  * ISSUE 1. 기본적인 실수
+    * 패키지 이름 오타(노트북이 고장난 탓이다..ㅠㅠ)
+    * 테스트 코드 url 오타 (어떻게 / 없이 요청을 보내려고..)
+  * ISSUE 2. [gradle version](https://github.com/jojoldu/freelec-springboot2-webservice/issues/2)
+  

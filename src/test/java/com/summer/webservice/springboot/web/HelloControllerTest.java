@@ -1,6 +1,5 @@
-package com.summer.webservice.sprigboot.web;
+package com.summer.webservice.springboot.web;
 
-import com.summer.webservice.springboot.web.HelloController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +22,7 @@ public class HelloControllerTest {
     public void hello가_리턴된다() throws Exception {
         String hello = "hello";
 
-        mvc.perform(MockMvcRequestBuilders.get("hello"))
+        mvc.perform(MockMvcRequestBuilders.get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(hello));
     }
