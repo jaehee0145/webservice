@@ -40,3 +40,9 @@
     * 선언할 경우 @Controller, @ControllerAdvice 등을 사용할 수 있음
     * @Service, @Component, @Repository 등은 사용할 수 없음
   
+- lombok 설정
+  - 자바 개발할 때 자주 사용하는 코드 Getter, Setter, 기본생성자, toString 등을 자동 생성해줌
+
+- lombok 테스트 
+  - ISSUE 1. [No tests found for given includes](https://www.hanumoka.net/2020/12/12/springBoot-20201212-intellij-No-tests-found-for-given-includes/)
+  - 
