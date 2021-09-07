@@ -30,3 +30,13 @@
     * 테스트 코드 url 오타 (어떻게 / 없이 요청을 보내려고..)
   * ISSUE 2. [gradle version](https://github.com/jojoldu/freelec-springboot2-webservice/issues/2)
   
+- 테스트 코드
+  * @RunWith(SpringRunner.class)
+    * 테스트를 진행할 때 JUnit에 내장된 실행자 외에 다른 실행자를 실행시킴
+    * 여기서는 SprigRunner라는 스프링 실행자를 사용
+    * 즉, 스프링 부트 테스트와 JUnit 사이에 연결자 역할을 함
+  * @WebMvcTest
+    * 여러 스프링 테스트 어노테이션 중 Web(Spring MVC)에 집중할 수 있는 어노테이션
+    * 선언할 경우 @Controller, @ControllerAdvice 등을 사용할 수 있음
+    * @Service, @Component, @Repository 등은 사용할 수 없음
+  
