@@ -40,8 +40,10 @@ dependencies {
     // 책 보고 추가함
     // compile, test compile 은 deprecated 되어서 수정
     implementation('org.springframework.boot:spring-boot-starter-web')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
     implementation('org.projectlombok:lombok')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 
 }
 
