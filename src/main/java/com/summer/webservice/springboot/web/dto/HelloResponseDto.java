@@ -1,6 +1,7 @@
 package com.summer.webservice.springboot.web.dto;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Getter
