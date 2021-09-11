@@ -1,5 +1,6 @@
 package com.summer.webservice.springboot.domain.posts;
 
+import com.summer.webservice.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity // 테이블과 링크될 클래스임을 나타냄
 @Getter
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
