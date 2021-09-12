@@ -19,4 +19,11 @@
 - HTML은 위에서부터 코드가 실행된다.
 - css는 header에, js는 footer 가 좋다.
   - js 용량이 클수록 body부분 실행이 늦어지기 때문에 body 하단에 두는 것이 좋고 css를 먼저 불러야 사용자가 깨진 화면을 안보게 된다. 
-- bootstrap.js가 제이쿼리에 **의존**하기 때문에 제이쿼리를 먼저 호출 
+- bootstrap.js가 제이쿼리에 **의존**하기 때문에 제이쿼리를 먼저 호출
+
+---
+### 정적 파일
+- 스프링 부트는 기본적으로 src/main/resources/static에 위치한 정적파일을 절대경로로 호출    
+- `<script src="/js/app/index.js"></script>`
+
+
