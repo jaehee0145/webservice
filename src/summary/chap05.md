@@ -22,3 +22,12 @@
 2. 302 status code
    - 인증되지 않은 사용자의 요청을 이동
    - **Mock User 사용**
+
+3. @WebMvcTest 에서 CustomOAuth2UserService를 찾을 수 없음  
+   - @WebMvcTest는 WebSecurityConfigurerAdapter, WebMvcConfigurer를 비롯한 @ControllerAdvice, @Controller를 읽는다. 즉, @Repository, @Service, @Component는 스캔 대상이 아니다.  
+   - SecurityConfig는 읽었지만 이를 생성하기 위해 필요한 service를 읽을 수 없어서 에러
+   - **@WebMvcTest 에서 excludeFilters 옵션을 사용해서 SecurityConfig를 읽지 않게함**
+
+3-1. At least one JPA metamodel must be present
+   - @EnableJpaAuditing 를 사용하려면 최소 하나의 @Entity 클래스가 필요한데 @MebMvcTest는 당연히 없다.
+   - **@EnableJpaAuditing 과 @SpringBootApplication 을 분리**
