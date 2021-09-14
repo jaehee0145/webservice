@@ -16,3 +16,7 @@
   3. Software as a Service(Saas)
      - 스프트웨어 서비스
      - 구글 드라이브, 드랍박스, 와탭 등 
+
+### EC2 (Elastic Compute Cloud) 인스턴스 생성
+- 성능, 용량 등을 유동적으로 사용할 수 있는 서버 
+- AMI(Amazon Machine Image) 인스턴스라는 가상머신에 운영체제 등을 설치할 수 있게 구워넣은 이미지
