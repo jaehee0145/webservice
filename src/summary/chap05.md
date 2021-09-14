@@ -17,4 +17,8 @@
    - CustomOAuth2UserService 생성하는데 필요한 소셜로그인 관련 설정값들이 없기 때문
    - src/main 환경과 test/main 환경의 차이
    - application.properties가 없으면 main에서 가져오는데 다른 설정은 가져오지 않음
-   - 테스트용 application.properties 생성해주면 됨
+   - **테스트용 application.properties 생성해주면 됨**
+
+2. 302 status code
+   - 인증되지 않은 사용자의 요청을 이동
+   - **Mock User 사용**
