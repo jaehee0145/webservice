@@ -6,3 +6,4 @@
 [chapter 04 머스테치로 화면 구성하기](/src/summary/chap04.md)  
 [chapter 05 스프링 시큐리티와 OAuth2.0으로 로그인 기능 구현하기](/src/summary/chap05.md)  
 [chapter 06 AWS 서버 환경을 만들어보자 - AWS EC2](/src/summary/chap06.md)  
+[chapter 07 AWS에 데이터베이스 환경을 만들어보자 - AWS RDS](/src/summary/chap07.md)  
