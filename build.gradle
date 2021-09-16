@@ -49,6 +49,8 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation('org.springframework.security:spring-security-test')
 
+    // gradle build 실패해서 추가
+    annotationProcessor('org.projectlombok:lombok')
 }
 
 // 책 보고 추가함 END
