@@ -190,3 +190,5 @@ hs_err_pid*
 
 application-oauth.properties
 out
+
+gradle/
