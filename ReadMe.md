@@ -11,3 +11,9 @@
 [chapter 09 코드가 푸시되면 자동으로 배포해 보자 - Travis CI 배포 자동화](/src/summary/chap09.md)  
 
 
+---
+EC2 접속
+ssh summer-springboot2-webservice
+
+Application log
+nohup.out
