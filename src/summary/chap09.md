@@ -23,11 +23,11 @@
 - S3 : 이미지 파일을 비롯한 정적 파일, 배포 파일 등을 관리하는 파일 서버  
 - Travis CI 연동시 구조  
 <img width="400" alt="스크린샷 2021-09-20 오전 12 29 40" src="https://user-images.githubusercontent.com/45681372/133933419-2f992ca1-7ba9-4c3c-83cf-d4234226874c.png">
-- Travis CI와 S3 연동
-  - Travis CI가 빌드한 Jar 파일을 S3에 저장
-     - 실제 배포는 CodeDeploy로 하지만 Jar파일을 전달하기 위해서 S3 연동이 먼저 필요
-       - CodeDeploy 저장 기능이 없어서 S3 사용
-         - CodeDeploy로 빌드, 배포를 할 수 있지만 빌드없이 배포만 필요한 경우도 있으니까 빌드, 배포를 분리하는 것을 추천
+- Travis CI와 S3 연동  
+  - Travis CI가 빌드한 Jar 파일을 S3에 저장  
+     - 실제 배포는 CodeDeploy로 하지만 Jar파일을 전달하기 위해서 S3 연동이 먼저 필요  
+       - CodeDeploy 저장 기능이 없어서 S3 사용  
+         - CodeDeploy로 빌드, 배포를 할 수 있지만 빌드없이 배포만 필요한 경우도 있으니까 빌드, 배포를 분리하는 것을 추천  
 
 
 
